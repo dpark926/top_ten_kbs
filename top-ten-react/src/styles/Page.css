@@ -1,0 +1,16 @@
+.page-container {
+  border: 1px solid red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.page-box {
+  border: 1px solid blue;
+  vertical-align: middle;
+}
+
+.page-box:hover {
+  cursor: crosshair;
+}
