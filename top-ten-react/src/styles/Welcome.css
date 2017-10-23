@@ -1,0 +1,23 @@
+.arrow {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  top: 0px;
+}
+
+.arrow:hover {
+  background-color: blue;
+  color: white;
+}
+
+.left-arrow {
+  left: 0px;
+  font-size: 40px;
+}
+
+.right-arrow {
+  right: 0px;
+  font-size: 40px;
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Redirect } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './containers/Welcome'
 import Page1 from './components/Page1.js'
 import Page2 from './components/Page2.js'
 import Page3 from './components/Page3.js'
@@ -24,7 +25,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p> */}
-        <Redirect to='/page1' />
+        <Redirect to='/welcome' />
+        {/* <Route path="/welcome" component={Welcome}/> */}
+        <Welcome/>
         <Route path="/page1" component={Page1}/>
         <Route path="/page2" component={Page2}/>
         <Route path="/page3" component={Page3}/>
