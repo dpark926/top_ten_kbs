@@ -150,7 +150,7 @@ class Welcome extends Component {
         <Route path="/page7" render={() => <Page7 flip={this.flip7} flip7={this.state.flip7} increasePage={this.increasePage}/>}/>
         <Route path="/page8" render={() => <Page8 flip={this.flip8} flip8={this.state.flip8} increasePage={this.increasePage}/>}/>
         <Route path="/page9" render={() => <Page9 flip={this.flip9} flip9={this.state.flip9} increasePage={this.increasePage}/>}/>
-        <Route path="/page10" render={() => <Page10 flip={this.flip} flip10={this.state.flip10} increasePage={this.increasePage}/>}/>
+        <Route path="/page10" render={() => <Page10 flip={this.flip10} flip10={this.state.flip10} increasePage={this.increasePage}/>}/>
         <Route path="/page11" render={() => <ThankYou/>}/>
       </div>
     )

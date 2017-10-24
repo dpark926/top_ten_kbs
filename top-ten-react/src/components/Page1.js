@@ -25,14 +25,16 @@ function Page1 (props) {
       <div className="page-box">
         {props.flip1 === false ? null : <div className="animated flip" id='flip1'>{answer}</div>}
       </div> */}
-      <div className='page-box question animated slideInRight' onClick={props.flip}>
-        <h1>REASON #1</h1>
-        {/* <img src={img1}></img> */}
+      <div className='blahhhh'>
+        <div className='page-box question animated slideInRight' onClick={props.flip}>
+          <h1>REASON #1</h1>
+          {/* <img src={img1}></img> */}
+        </div>
+        {props.flip1 === false ? null :
+          <Link to='/page2' style={{ textDecoration: 'none' }}>
+            <div className='page-box answer animated slideInLeft'>{answer}</div>
+          </Link> }
       </div>
-      {props.flip1 === false ? null :
-        <Link to='/page2' style={{ textDecoration: 'none' }}>
-          <div className='page-box answer animated slideInLeft'>{answer}</div>
-        </Link> }
     </div>
   )
 }
