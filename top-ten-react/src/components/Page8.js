@@ -6,9 +6,9 @@ function Page8 (props) {
   let answer = (
     <div onClick={props.increasePage}>
       <div className='list'>
-        <h3>I LOVE TO CODE</h3>
+        <h3>ENTREPRENEURIAL</h3>
         <ul>
-          <li>I enjoy my craft and always looking at <br/>how I can improve on my work.</li>
+          <li>I abilty to wear multiple hats and I work well in ambiguity</li>
         </ul>
       </div>
     </div>

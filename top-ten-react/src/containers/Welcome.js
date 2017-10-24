@@ -12,6 +12,7 @@ import Page7 from '../components/Page7.js'
 import Page8 from '../components/Page8.js'
 import Page9 from '../components/Page9.js'
 import Page10 from '../components/Page10.js'
+import ThankYou from '../components/ThankYou.js'
 import img1 from '../styles/imgs/spies_logo.jpg'
 import img2 from '../styles/imgs/spy_1.png'
 
@@ -108,12 +109,18 @@ class Welcome extends Component {
     })
   }
 
+  flip10 = () => {
+    this.setState({
+      flip10: !this.state.flip10
+    })
+  }
+
   render = () => {
     return (
       <div className='welcome-container'>
         <div>
           <img src={img2}></img>
-          <h1>WELCOME!</h1>
+          {/* <h1>WELCOME!</h1> */}
           {/* <p>Here are 10 top reasons why I'd love to be the newest member of the KBS family</p> */}
         </div>
         {this.state.currentPage === 0 ?
@@ -125,7 +132,7 @@ class Welcome extends Component {
           </Link>
         }
 
-        {this.state.currentPage === 10 ?
+        {this.state.currentPage === 11 ?
           null :
           <Link to={`page${this.state.currentPage + 1}`}>
             <div className='arrow right-arrow' onClick={this.increasePage}>
@@ -143,7 +150,8 @@ class Welcome extends Component {
         <Route path="/page7" render={() => <Page7 flip={this.flip7} flip7={this.state.flip7} increasePage={this.increasePage}/>}/>
         <Route path="/page8" render={() => <Page8 flip={this.flip8} flip8={this.state.flip8} increasePage={this.increasePage}/>}/>
         <Route path="/page9" render={() => <Page9 flip={this.flip9} flip9={this.state.flip9} increasePage={this.increasePage}/>}/>
-        <Route path="/page10" render={() => <Page10 flip={this.flip} flip10={this.state.flip10}/>}/>
+        <Route path="/page10" render={() => <Page10 flip={this.flip} flip10={this.state.flip10} increasePage={this.increasePage}/>}/>
+        <Route path="/page11" render={() => <ThankYou/>}/>
       </div>
     )
   }

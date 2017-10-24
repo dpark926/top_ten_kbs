@@ -6,7 +6,7 @@ function Page9 (props) {
   let answer = (
     <div onClick={props.increasePage}>
       <div className='list'>
-        <h3>I LOVE TO CODE</h3>
+        <h3>HUMILITY</h3>
         <ul>
           <li>I enjoy my craft and always looking at <br/>how I can improve on my work.</li>
         </ul>
