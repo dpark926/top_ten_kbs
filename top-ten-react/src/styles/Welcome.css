@@ -38,3 +38,8 @@
   right: 0px;
   font-size: 40px;
 }
+
+img {
+  display: inline-block;
+  width: 50px;
+}
