@@ -8,14 +8,25 @@
   width: 10%;
   height: 100%;
   border: 3px solid #73AD21;
+  color: white;
   padding: 10px;
   top: 0px;
   z-index: 2;
 }
 
 .arrow:hover {
-  background-color: blue;
-  color: white;
+  background-color: rgba(96, 96, 96, 0.2);
+  color: red;
+}
+
+.arrow-icon {
+  border: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
 }
 
 .left-arrow {

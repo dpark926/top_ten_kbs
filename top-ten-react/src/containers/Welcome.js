@@ -44,9 +44,15 @@ class Welcome extends Component {
   }
 
   flip = (event) => {
-    let name = event.target.id
+    // debugger
+    // let name = event.target.id
+    // this.setState({
+    //   [name]: !this.state[name]
+    // })
+    // console.log(event.target)
+
     this.setState({
-      [name]: !this.state[name]
+      flip1: !this.state.flip1
     })
   }
 
@@ -60,14 +66,18 @@ class Welcome extends Component {
         {this.state.currentPage === 0 ?
           null :
           <Link to={`page${this.state.currentPage - 1}`}>
-            <div className='arrow left-arrow' onClick={this.decreasePage}>{"<"}</div>
+            <div className='arrow left-arrow' onClick={this.decreasePage}>
+              <div className='arrow-icon fa fa-arrow-circle-o-left'></div>
+            </div>
           </Link>
         }
 
         {this.state.currentPage === 10 ?
           null :
           <Link to={`page${this.state.currentPage + 1}`}>
-            <div className='arrow right-arrow' onClick={this.increasePage}>{">"}</div>
+            <div className='arrow right-arrow' onClick={this.increasePage}>
+              <span className='arrow-icon fa fa-arrow-circle-o-right'></span>
+            </div>
           </Link>
         }
         <Route path="/page1" render={() => <Page1 flip={this.flip} flip1={this.state.flip1}/>}/>
