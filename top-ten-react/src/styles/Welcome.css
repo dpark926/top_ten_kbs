@@ -50,7 +50,7 @@ img {
 }
 
 @-webkit-keyframes samurai {
-    0%  {right:500px;}
+    /*0%  {right:500px;}
     25% {
       right:-500px;
       -moz-transform: scaleX(-1);
@@ -70,5 +70,5 @@ img {
       filter: FlipH;
       -ms-filter: "FlipH";
     }
-    100% {right:500px;}
+    100% {right:500px;}*/
 }
