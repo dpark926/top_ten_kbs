@@ -9,10 +9,8 @@ function Page1 (props) {
     <div onClick={props.increasePage}>
       {/* <img src={img2}></img> */}
       <div className='list'>
-        <h3>I LOVE TO CODE</h3>
-        <ul>
-          <li>I enjoy my craft and always looking at <br/>how I can improve on my work</li>
-        </ul>
+        <p>I LOVE TO CODE</p>
+        <div className='answer-answer'>I enjoy my craft and always looking at <br/>how I can improve on my work</div>
       </div>
     </div>
 
@@ -27,7 +25,7 @@ function Page1 (props) {
       </div> */}
       <div className='blahhhh'>
         <div className='page-box question animated slideInRight' onClick={props.flip}>
-          <h1>REASON #1</h1>
+          <p>#1</p>
           {/* <img src={img1}></img> */}
         </div>
         {props.flip1 === false ? null :

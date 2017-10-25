@@ -6,10 +6,8 @@ function Page4 (props) {
   let answer = (
     <div onClick={props.increasePage}>
       <div className='list'>
-        <h3>GET SH*T DONE</h3>
-        <ul>
-          <li>I have a strong work ethic and <br/>the dedication to succeed</li>
-        </ul>
+        <p>GET SH*T DONE</p>
+        <div className='answer-answer'>I have a strong work ethic and <br/>the dedication to succeed</div>
       </div>
     </div>
   )
@@ -18,7 +16,7 @@ function Page4 (props) {
     <div className='page-container'>
       [page4]
       <div className='page-box question animated slideInRight' onClick={props.flip}>
-        <h1>REASON #4</h1>
+        <p>#4</p>
       </div>
       {props.flip4 === false ? null :
         <Link to='/page5' style={{ textDecoration: 'none' }}>

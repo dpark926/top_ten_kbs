@@ -1,5 +1,5 @@
 .welcome-container {
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   /*position: absolute;*/
 }
 
@@ -7,7 +7,7 @@
   position: absolute;
   width: 10%;
   height: 100%;
-  border: 3px solid #73AD21;
+  /*border: 3px solid #73AD21;*/
   color: white;
   padding: 10px;
   top: 0px;
@@ -20,7 +20,7 @@
 }
 
 .arrow-icon {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,32 +43,15 @@ img {
   display: inline-block;
   width: 70px;
   position: relative;
-  text-align: left;
   animation-name: samurai;
   animation-duration: 40s;
   animation-iteration-count: 100;
 }
 
 @-webkit-keyframes samurai {
-    /*0%  {right:500px;}
-    25% {
-      right:-500px;
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH";
-    }
-    50% {right:500px;}
-    75% {
-      right:-500px;
-      -moz-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-      filter: FlipH;
-      -ms-filter: "FlipH";
-    }
-    100% {right:500px;}*/
+    0%  {top:-70px;}
+    25% {top:0px;}
+    50% {top:-70px;}
+    75% {top:0px;}
+    100% {top:-70px;}
 }

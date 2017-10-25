@@ -1,5 +1,4 @@
 .topten {
-  font-family: 'Anton', sans-serif;
   margin: auto;
   position: fixed;
   width: 100%;
@@ -7,6 +6,7 @@
   top: 0px;
   left: 0px;
   display: table;
+  color: red;
 }
 
 .topten-wrapper {
@@ -16,23 +16,23 @@
 
 }
 
-.topten h1 {
-  font-size: 7em;
+.topten-page-box {
+  font-size: 6em;
+  font-weight: 800;
   /*border: 1px solid yellow;*/
   margin: 0;
 }
 
 .topten p {
-
-  font-family: 'Anonymous Pro', monospace;
   font-size: 4em;
   /*border: 1px solid yellow;*/
   margin: 0;
+  color: white;
 }
 
 .loveto {
   margin: auto;
-  text-align: left;
+  line-height: 4em;
   /*border: 1px solid red;*/
   width: 50%;
 }
