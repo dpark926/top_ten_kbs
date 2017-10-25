@@ -119,7 +119,7 @@ class Welcome extends Component {
     return (
       <div className='welcome-container'>
         <div>
-          <img src={img2}></img>
+          <Link to='/page0'><img src={img2}></img></Link>
           {/* <h1>WELCOME!</h1> */}
           {/* <p>Here are 10 top reasons why I'd love to be the newest member of the KBS family</p> */}
         </div>
