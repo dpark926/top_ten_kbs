@@ -6,33 +6,29 @@
   top: 0px;
   left: 0px;
   display: table;
-  color: red;
 }
 
 .topten-wrapper {
-  border: 1px solid yellow;
   display: table-cell;
   vertical-align: middle;
-
 }
 
 .topten-page-box {
-  font-size: 6em;
+  margin: auto;
+  font-size: 5.5em;
   font-weight: 800;
-  /*border: 1px solid yellow;*/
-  margin: 0;
-}
-
-.topten p {
-  font-size: 4em;
-  /*border: 1px solid yellow;*/
-  margin: 0;
-  color: white;
+  color: red;
+  width: 45%;
 }
 
 .loveto {
   margin: auto;
-  line-height: 4em;
-  /*border: 1px solid red;*/
-  width: 50%;
+  line-height: 4.5em;
+  width: 45%;
+}
+
+.loveto p {
+  font-size: 4em;
+  margin: 0;
+  color: white;
 }

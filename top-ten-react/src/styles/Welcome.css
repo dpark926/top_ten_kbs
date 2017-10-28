@@ -31,12 +31,12 @@
 
 .left-arrow {
   left: 0px;
-  font-size: 40px;
+  font-size: 3em;
 }
 
 .right-arrow {
   right: 0px;
-  font-size: 40px;
+  font-size: 3em;
 }
 
 img {
@@ -44,8 +44,9 @@ img {
   width: 70px;
   position: relative;
   animation-name: samurai;
-  animation-duration: 40s;
+  animation-duration: 30s;
   animation-iteration-count: 100;
+  z-index: 10;
 }
 
 @-webkit-keyframes samurai {

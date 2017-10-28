@@ -1,27 +1,23 @@
 import React from 'react';
 import '../styles/Page.css'
-import { Link } from 'react-router-dom'
 
-function Page10 (props) {
-  let answer = (
-    <div onClick={props.increasePage}>
-      <div className='list'>
-        <p>HUMILITY</p>
-        <div className='answer-answer'>I enjoy my craft and always looking at <br/>how I can improve on my work.</div>
-      </div>
-    </div>
-  )
-
+function Page10 () {
   return (
     <div className='page-container'>
-      [page10]
-      <div className='page-box question animated slideInRight' onClick={props.flip}>
-        <p>#10</p>
+      <div className='page-wrapper'>
+
+        <div className='page-box question animated slideInRight'>
+          <div className='question-header'>#10</div>
+        </div>
+
+        <div className='page-box answer animated slideInLeft'>
+          <div className='list'>
+            <p>HAVE FUN</p>
+            <div className='answer-answer'>Work Hard, Have Fun,<br/>Make History</div>
+          </div>
+        </div>
+
       </div>
-      {props.flip10 === false ? null :
-        <Link to='/page11' style={{ textDecoration: 'none' }}>
-          <div className='page-box answer animated slideInLeft'>{answer}</div>
-        </Link>}
     </div>
   )
 }

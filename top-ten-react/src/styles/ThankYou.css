@@ -1,0 +1,40 @@
+.thankyou {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  display: table;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: 300;
+  color: red;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: .6em;
+  text-align: left;
+}
+
+.label {
+  margin: 5px;
+}
+
+.label:hover {
+  color: red;
+}
+
+.thankyou {
+  font-size: 3em;
+  font-weight: 300;
+}
